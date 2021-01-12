@@ -7,13 +7,12 @@
 li might go here for floating left
 li colors would not go here
 */
-
+body {
+  max-width: 480px;
+  margin: auto;
+}
 main {
   overflow: hidden;
-}
-
-body {
-  min-width: 480px;
 }
 
 header {
@@ -75,14 +74,27 @@ footer {
 
   #b {
     float: left;
-    width: 21.052631578%;
+    width: 20%;
     height: 600px;
     justify-content: center;
     align-items: center;
   }
 
   #c {
+    float: left;
+    width: 40%; 
+    height: 200px;
+  }
+  
+  #d {
+    float: right;
+    width: 40%;
+    height: 200px;
+  }
 
+  #e, #f, #g, #h {
+    width: 19.791666666%;
+    height: 250px;
   }
 
 }

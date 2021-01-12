@@ -4,3 +4,8 @@
 - font size
 - border design
 */
+
+header, section, footer {
+  background-color: #8b7ac2;
+  border: 1px solid #301d70;
+}
