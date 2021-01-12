@@ -7,21 +7,82 @@
 li might go here for floating left
 li colors would not go here
 */
-* {
+
+main {
+  overflow: hidden;
+}
+
+body {
   min-width: 480px;
 }
 
 header {
   height: 75px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section:first {
+main section:first-child {
   height: 150px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section:not(:first) {
+main section:not(:first-child) {
   height: 125px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#e, #g {
+  float: left;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+#f, #h {
+  float: right;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+@media (min-width: 768px) {
+  main {
+    overflow: hidden;
+  }
+
+  body {
+    width: 960px;
+  }
+
+  header {
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #b {
+    float: left;
+    width: 21.052631578%;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #c {
+
+  }
+
 }
