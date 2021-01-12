@@ -1,17 +1,9 @@
 /* anything that affects the way elements lay out on the page
-- positioning
-- size
-- display (block, inline, none)
-- floats
-
-li might go here for floating left
-li colors would not go here
 */
+
 body {
   max-width: 480px;
   margin: auto;
-}
-main {
   overflow: hidden;
 }
 
@@ -51,25 +43,23 @@ main section:not(:first-child) {
 }
 
 footer {
-  height: 80px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;  
 }
 
 @media (min-width: 768px) {
-  main {
-    overflow: hidden;
-  }
-
-  body {
-    width: 960px;
-  }
 
   header {
     height: 100px;
     justify-content: center;
     align-items: center;
+  }
+
+  body {
+    max-width: 960px;
+    margin: auto;
   }
 
   #b {
@@ -93,8 +83,13 @@ footer {
   }
 
   #e, #f, #g, #h {
-    width: 19.791666666%;
+    width: 20%;
     height: 250px;
   }
 
+  footer {
+    width: 80%;
+    height: 150px;
+    /* margin-left: 20%; */
+  }
 }
