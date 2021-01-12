@@ -1,0 +1,27 @@
+/* anything that affects the way elements lay out on the page
+- positioning
+- size
+- display (block, inline, none)
+- floats
+
+li might go here for floating left
+li colors would not go here
+*/
+* {
+  min-width: 480px;
+}
+
+header {
+  height: 75px;
+  display: flex;
+}
+
+section:first {
+  height: 150px;
+  display: flex;
+}
+
+section:not(:first) {
+  height: 125px;
+  display: flex;
+}
